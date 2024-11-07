@@ -1,21 +1,98 @@
-# React + TypeScript + Vite
+# 🖼️ 圖片上傳平台
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![平台預覽](https://raw.githubusercontent.com/jos556/upload_image/main/public/platform.png)
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+一個使用 React 和 Vite 建構的現代化、用戶友好的圖片上傳和管理平台。
 
-## Deploy Your Own
+## ✨ 特色功能
 
-Deploy your own Vite project with Vercel.
+- 🚀 快速且響應式的圖片上傳
+- 🎨 現代化 UI 設計
+- 📱 移動裝置友好界面
+- 🔒 安全的 GitHub 存儲
+- 🖼️ 圖片預覽功能
+- ⚡ 使用 Vite 實現極速開發
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
+## 🛠️ 技術架構
 
-_Live Example: https://vite-react-example.vercel.app_
+- ⚛️ React
+- 📦 Vite
+- 🔷 TypeScript
+- 🎨 CSS3
+- 🌐 Axios
 
-### Deploying From Your Terminal
+## 🚀 快速開始
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+1. **克隆專案**
 
-```shell
-$ vercel
+```bash
+git clone https://github.com/jos556/upload_image.git
+cd upload_image
 ```
+
+2. **安裝依賴**
+
+```bash
+npm install
+```
+
+3. **設置環境變數**
+   在根目錄創建 `.env` 文件：
+
+```env
+VITE_GITHUB_TOKEN=你的github令牌
+```
+
+4. **啟動開發服務器**
+
+```bash
+npm run dev
+```
+
+## 📝 環境設置
+
+使用此應用程序需要：
+
+1. 創建具有 `repo` 權限的 GitHub 個人訪問令牌
+2. 將令牌添加到 `.env` 文件
+3. 在 `ImageUploader.jsx` 中配置你的倉庫詳細信息
+
+## 🔧 配置說明
+
+在 `ImageUploader.jsx` 中更新以下變量：
+
+```javascript
+const REPO_OWNER = '你的github用戶名';
+const REPO_NAME = '你的倉庫名稱';
+```
+
+## 📱 響應式設計
+
+平台完全響應式，支持以下設備：
+
+- 💻 桌面端 (1920px 及以下)
+- 💻 筆記本 (1400px 及以下)
+- 📱 平板 (1200px 及以下)
+- 📱 手機 (768px 及以下)
+
+## 🤝 參與貢獻
+
+歡迎提交 Pull Request 來改進這個專案！
+
+## 📄 授權協議
+
+本專案使用 MIT 授權協議 - 詳見 [LICENSE](LICENSE) 文件。
+
+## 👨‍💻 作者
+
+- [@jos556](https://github.com/jos556)
+
+## 🙏 致謝
+
+- React 團隊
+- Vite 團隊
+- 所有貢獻者
+
+---
+
+<p align="center">由 jos556 用 ❤️ 製作</p>
